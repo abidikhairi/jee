@@ -1,3 +1,6 @@
+# Downloaded dependencies / applications (e.g. Tomcat)
+libs/
+
 # Build output
 target/
 *.war
