@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620"
+     font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arw" markerWidth="10" markerHeight="10" refX="8" refY="3"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#7c86a8"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="620" rx="18" fill="#f7f8fc"/>
+
+  <!-- Client tier -->
+  <rect x="26" y="238" width="182" height="150" rx="14" fill="#eef2fb" stroke="#c9d3ea" stroke-width="1.5"/>
+  <text x="117" y="288" text-anchor="middle" font-size="22" font-weight="700" fill="#1b1f3b">Client</text>
+  <text x="117" y="318" text-anchor="middle" font-size="15" fill="#5b6472">Browser / mobile</text>
+  <text x="117" y="342" text-anchor="middle" font-size="15" fill="#5b6472">HTTP(S)</text>
+
+  <line x1="210" y1="313" x2="296" y2="313" stroke="#7c86a8" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- Application server -->
+  <rect x="300" y="60" width="600" height="520" rx="18" fill="#ffffff" stroke="#4b3f9e" stroke-width="2"/>
+  <text x="600" y="95" text-anchor="middle" font-size="21" font-weight="700" fill="#4b3f9e">Application Server</text>
+  <text x="600" y="117" text-anchor="middle" font-size="14" fill="#5b6472">implements the Jakarta EE specifications</text>
+
+  <!-- Web container -->
+  <rect x="328" y="136" width="544" height="176" rx="12" fill="#eaf7f5" stroke="#1f9c8f" stroke-width="1.6"/>
+  <text x="600" y="166" text-anchor="middle" font-size="18" font-weight="700" fill="#14776c">Web Container</text>
+  <text x="600" y="188" text-anchor="middle" font-size="13.5" fill="#3c7a72">serves HTTP, creates dynamic pages</text>
+  <g font-size="15" font-weight="600" fill="#0f5f56">
+    <rect x="350" y="208" width="116" height="60" rx="10" fill="#ffffff" stroke="#a9ddd6"/>
+    <text x="408" y="244" text-anchor="middle">Servlet</text>
+    <rect x="478" y="208" width="116" height="60" rx="10" fill="#ffffff" stroke="#a9ddd6"/>
+    <text x="536" y="244" text-anchor="middle">JSP</text>
+    <rect x="606" y="208" width="116" height="60" rx="10" fill="#ffffff" stroke="#a9ddd6"/>
+    <text x="664" y="244" text-anchor="middle">REST</text>
+    <rect x="734" y="208" width="116" height="60" rx="10" fill="#ffffff" stroke="#a9ddd6"/>
+    <text x="792" y="244" text-anchor="middle">WebSocket</text>
+  </g>
+
+  <line x1="600" y1="312" x2="600" y2="350" stroke="#7c86a8" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- Business container -->
+  <rect x="328" y="352" width="544" height="176" rx="12" fill="#fdeef5" stroke="#d94f86" stroke-width="1.6"/>
+  <text x="600" y="382" text-anchor="middle" font-size="18" font-weight="700" fill="#b23563">EJB / CDI Container</text>
+  <text x="600" y="404" text-anchor="middle" font-size="13.5" fill="#a85a7d">business logic, dependency injection, transactions</text>
+  <g font-size="15" font-weight="600" fill="#9c2f58">
+    <rect x="350" y="424" width="116" height="60" rx="10" fill="#ffffff" stroke="#f0bcd2"/>
+    <text x="408" y="460" text-anchor="middle">EJB</text>
+    <rect x="478" y="424" width="116" height="60" rx="10" fill="#ffffff" stroke="#f0bcd2"/>
+    <text x="536" y="460" text-anchor="middle">CDI</text>
+    <rect x="606" y="424" width="116" height="60" rx="10" fill="#ffffff" stroke="#f0bcd2"/>
+    <text x="664" y="460" text-anchor="middle">Validation</text>
+    <rect x="734" y="424" width="116" height="60" rx="10" fill="#ffffff" stroke="#f0bcd2"/>
+    <text x="792" y="460" text-anchor="middle">JTA</text>
+  </g>
+
+  <text x="600" y="562" text-anchor="middle" font-size="14" fill="#5b6472">Containers manage lifecycle, threads, transactions, security and pooling</text>
+
+  <line x1="900" y1="313" x2="986" y2="313" stroke="#7c86a8" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- Data tier -->
+  <rect x="990" y="238" width="182" height="150" rx="14" fill="#fdf3e8" stroke="#e0a95c" stroke-width="1.5"/>
+  <text x="1081" y="288" text-anchor="middle" font-size="22" font-weight="700" fill="#8a5a12">Data / EIS</text>
+  <text x="1081" y="318" text-anchor="middle" font-size="15" fill="#9a7434">JPA · JDBC</text>
+  <text x="1081" y="342" text-anchor="middle" font-size="15" fill="#9a7434">Database</text>
+</svg>

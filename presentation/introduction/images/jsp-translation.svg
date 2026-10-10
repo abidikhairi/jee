@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560"
+     font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arw2" markerWidth="10" markerHeight="10" refX="8" refY="3"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#8a90a8"/>
+    </marker>
+  </defs>
+
+  <!-- 1 -->
+  <rect x="70" y="10" width="420" height="72" rx="12" fill="#fdeef5" stroke="#d94f86" stroke-width="1.6"/>
+  <text x="280" y="43" text-anchor="middle" font-size="19" font-weight="700" fill="#b23563">index.jsp</text>
+  <text x="280" y="66" text-anchor="middle" font-size="14" fill="#a85a7d">a text template: HTML + Java</text>
+
+  <line x1="280" y1="82" x2="280" y2="108" stroke="#8a90a8" stroke-width="2.5" marker-end="url(#arw2)"/>
+
+  <!-- 2 -->
+  <rect x="70" y="110" width="420" height="64" rx="12" fill="#eef2fb" stroke="#c9d3ea" stroke-width="1.6"/>
+  <text x="280" y="148" text-anchor="middle" font-size="17" font-weight="700" fill="#2f4a86">Jasper translator</text>
+
+  <line x1="280" y1="174" x2="280" y2="200" stroke="#8a90a8" stroke-width="2.5" marker-end="url(#arw2)"/>
+
+  <!-- 3 -->
+  <rect x="70" y="202" width="420" height="72" rx="12" fill="#eaf7f5" stroke="#1f9c8f" stroke-width="1.6"/>
+  <text x="280" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#14776c">index_jsp.java</text>
+  <text x="280" y="258" text-anchor="middle" font-size="14" fill="#3c7a72">a real Servlet source file</text>
+
+  <line x1="280" y1="274" x2="280" y2="300" stroke="#8a90a8" stroke-width="2.5" marker-end="url(#arw2)"/>
+
+  <!-- 4 -->
+  <rect x="70" y="302" width="420" height="64" rx="12" fill="#eef2fb" stroke="#c9d3ea" stroke-width="1.6"/>
+  <text x="280" y="340" text-anchor="middle" font-size="17" font-weight="700" fill="#2f4a86">javac</text>
+
+  <line x1="280" y1="366" x2="280" y2="392" stroke="#8a90a8" stroke-width="2.5" marker-end="url(#arw2)"/>
+
+  <!-- 5 -->
+  <rect x="70" y="394" width="420" height="72" rx="12" fill="#eaf7f5" stroke="#1f9c8f" stroke-width="1.6"/>
+  <text x="280" y="427" text-anchor="middle" font-size="18" font-weight="700" fill="#14776c">index_jsp.class</text>
+  <text x="280" y="450" text-anchor="middle" font-size="14" fill="#3c7a72">servlet bytecode, loaded by the container</text>
+
+  <line x1="280" y1="466" x2="280" y2="492" stroke="#8a90a8" stroke-width="2.5" marker-end="url(#arw2)"/>
+
+  <!-- 6 -->
+  <rect x="70" y="494" width="420" height="56" rx="12" fill="#ffffff" stroke="#d94f86" stroke-width="1.6"/>
+  <text x="280" y="529" text-anchor="middle" font-size="17" font-weight="700" fill="#b23563">HTML response to the browser</text>
+</svg>
