@@ -22,14 +22,6 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(name = "hello", urlPatterns = {"/hello"})
 public class HelloServlet extends HttpServlet {
 
-    private static final DateTimeFormatter FORMATTER =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
