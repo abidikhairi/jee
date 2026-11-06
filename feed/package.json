@@ -1,0 +1,12 @@
+{
+  "name": "feed",
+  "private": true,
+  "scripts": {
+    "css": "tailwindcss -i src/main/tailwind/input.css -o src/main/webapp/css/styles.css --minify",
+    "css:watch": "tailwindcss -i src/main/tailwind/input.css -o src/main/webapp/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
