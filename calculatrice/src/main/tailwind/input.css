@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Tailwind scans the Java servlets too: the HTML (and its classes) lives there. */
+@source "../java";
