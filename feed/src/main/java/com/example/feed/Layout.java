@@ -16,10 +16,11 @@ final class Layout {
                 <head>
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1">
-                  <title>Feed</title>
+                  <title>Accueil / Feed</title>
+                  <meta name="theme-color" content="#000000">
                   <link rel="stylesheet" href="%s/css/styles.css">
                 </head>
-                <body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+                <body class="min-h-screen bg-black font-sans text-zinc-100 antialiased">
                 %s
                 </body>
                 </html>
