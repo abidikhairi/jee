@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>La caculatrice</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Calculatrice</h1>
+	
+	<form action="Calculatrice" method="post">
+		<label for="E1">Premier nombre</label>
+		<input type="text" id="E1" name="E1" required autofocus>
+		
+		<label for="E2">Deuxième nombre</label>
+		<input type="text" id="E2" name="E2" required>
+		
+		<label for="operateur">Opérateur</label>
+		<select id="operateur" name="operateur" required>
+		    <option value="+">Addition (+)</option>
+		    <option value="-">Soustraction (-)</option>
+		    <option value="*">Multiplication (*)</option>
+		    <option value="/">Division (/)</option>
+		</select>
+			
+		<button type="submit">Cacluler</button>
+		
+	</form>
+</body>
+</html>

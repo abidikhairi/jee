@@ -1,0 +1,176 @@
+
+/* ==========================
+   STYLE GLOBAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #172554, transparent 40%),
+        radial-gradient(circle at bottom right, #3b0764, transparent 40%),
+        #080d1a;
+
+    color: #f1f5f9;
+    padding: 20px;
+}
+
+/* ==========================
+   CARTE CALCULATRICE
+========================== */
+
+body > form,
+body > h1 {
+    /* La mise en page complète est gérée plus bas */
+}
+
+body {
+    flex-direction: column;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #60a5fa, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 35px rgba(96, 165, 250, 0.15);
+}
+
+form {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+
+    background: rgba(15, 23, 42, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(59, 130, 246, 0.08);
+
+    backdrop-filter: blur(16px);
+}
+
+/* ==========================
+   LABELS
+========================== */
+
+label {
+    display: block;
+    margin: 18px 0 9px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+/* ==========================
+   CHAMPS DE SAISIE
+========================== */
+
+input,
+select {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+
+    color: #f8fafc;
+    background: #0b1222;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: 1rem;
+    transition: border-color 0.25s,
+                box-shadow 0.25s,
+                background 0.25s;
+}
+
+input:focus,
+select:focus {
+    border-color: #60a5fa;
+    background: #101a30;
+
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.15);
+}
+
+input:hover,
+select:hover {
+    border-color: #64748b;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* ==========================
+   BOUTON CALCULER
+========================== */
+
+button {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 22px rgba(59, 130, 246, 0.25);
+
+    transition: transform 0.2s,
+                box-shadow 0.2s,
+                filter 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.12);
+    box-shadow: 0 12px 28px rgba(139, 92, 246, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+}
