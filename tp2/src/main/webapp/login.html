@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Page d'authentification </title>
+<link rel="stylesheet" type="text/css" href="css/style.css"> </head>
+</head>
+<body>
+
+    <h2>Authentification</h2>
+
+    <form action="authentifier" method="POST">
+        <label> Nom : </label>
+        <input type="text" name="nom" autofocus required>
+        <br><br>
+
+        <label> Prénom : </label>
+        <input type="text" name="prenom" required>
+        <br><br>
+
+        <label> Email : </label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label> Mot de passe : </label>
+        <input type="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Se connecter">
+
+    </form>
+
+</body>
+</html>

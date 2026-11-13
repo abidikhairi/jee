@@ -1,6 +1,9 @@
 # Downloaded dependencies / applications (e.g. Tomcat)
 libs/
 
+# Scratch / extracted archives
+trash/
+
 # Build output
 target/
 *.war

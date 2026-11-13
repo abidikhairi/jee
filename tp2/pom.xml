@@ -1,0 +1,50 @@
+
+<project xmlns="http://apache.org" 
+         xmlns:xsi="http://w3.org"
+         xsi:schemaLocation="http://apache.org https://apache.org">
+<modelVersion>4.0.0</modelVersion>
+  <groupId>com.TP2</groupId>
+  <artifactId>TP2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+        <!-- Version de Java (Utilisez 21 ou plus pour Eclipse 2026) -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+        <!-- API Plateforme Jakarta EE (Contient Servlets, JSP, JPA, etc.) -->
+        <!-- Portée 'provided' car c'est Tomcat qui fournira l'implémentation au démarrage -->
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>10.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <!-- Plugin pour compiler le code Java -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+            <!-- Plugin pour générer le fichier WAR destiné à Tomcat -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <!-- Évite une erreur si le fichier web.xml est absent (optionnel en Jakarta EE) -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>         
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+version="3.1">
+
+	<!-- Déclaration de la servlet-->
+	<servlet>
+		<servlet-name>AuthentificationServlet</servlet-name>
+		<servlet-class>Ctrl.AuthentificationServlet</servlet-class>
+	</servlet>
+    <servlet>
+		<servlet-name>LogoutServlett</servlet-name>
+		<servlet-class>Ctrl.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<!-- Page d'accueil -->
+	<welcome-file-list>
+	    <welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+</web-app>
